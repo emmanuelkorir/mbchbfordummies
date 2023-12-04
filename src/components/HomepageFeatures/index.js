@@ -21,7 +21,7 @@ const FeatureList = [
   },
   {
     title: 'Achieve Excellence',
-    Svg: require('@site/static/img/undraw_doctors.svg.svg').default,
+    Svg: require('@site/static/img/undraw_doctors.svg').default,
     description: (
       <>
 Improve your grades.

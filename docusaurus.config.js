@@ -41,10 +41,14 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          sidebarCollapsed: true,
+          
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
         },
         blog: false, 
         //blog: {
@@ -89,7 +93,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Level',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           // {
@@ -99,6 +103,12 @@ const config = {
           // },
         ],
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       footer: {
         style: 'dark',
         links: [
@@ -106,7 +116,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Level 6',
                 to: '/docs/intro',
               },
             ],
